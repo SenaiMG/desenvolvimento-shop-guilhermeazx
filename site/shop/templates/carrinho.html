@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="pt-br" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/checkout/">
+    <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="assets/css/checkout.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <title>Template-Bootstrap v5.3</title>
+  </head>
+  <body class="bg-body-tertiary">
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+      </symbol>
+    </svg>
+    <div class="container">
+      <!--Navbar-->        
+      <header data-bs-theme="dark">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">TemplateShop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html"><img src="assets/img/loja.png" alt="Loja" width="32px" height="32px"></a>
+                </li>
+                <ul class="navbar-nav flex-grow-1 justify-content-between">
+                    <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#suporte">Suporte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../produtos.html">Preços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../carrinho.html">
+                      <img src="assets/img/carrinho.png" alt="carrinho">
+                    </a></li>
+                </ul>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Pesquise Produtos" aria-label="Search">
+                <button class="btn btn-outline-success me-4" type="submit">Pesquisar</button>
+              </form>
+              <div class="text-end">
+                <button type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Entrar</button>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Registrar</button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="b-example-divider text-bg-dark py-2" style="opacity: 50%;"></div>
+        <!--Modal Login-->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" style="display: none;" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Login Usuário</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form class="needs-validation" novalidate>
+                  <div class="mb-3">
+                    <label for="Email1" class="form-label">Email</label>
+                    <input type="email" placeholder="example@email.com" class="form-control" id="Email1" aria-describedby="emailHelp" required>
+                    <div class="invalid-feedback">
+                      Email válido é obrigatório.
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="Password1" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="Password1" required>
+                    <div class="invalid-feedback">
+                      Senha válido é obrigatório.
+                    </div>
+                    <div id="emailHelp" class="form-text">Esqueceu sua senha? <a href="#" style="color:blue;">Clique aqui</a> </div>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="Check1">
+                    <label class="form-check-label" for="Check1">Lembrar login</label>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"> <img width="24" height="24" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"> Entrar com Google</button>
+                <button type="submit" class="btn btn-dark" data-bs-dismiss="modal">Entrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Modal Registrar-->
+        <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" style="display: none;" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel2">Registrar Usuário</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" placeholder="example@email.com" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Confirmar Senha</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-1 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Lembrar login</label>
+                  </div>
+                  <div class="mb-1 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                    <label class="form-check-label" for="exampleCheck2">Aceitar os <a href="#" style="color: blue;">Termos de Uso</a></label>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"> <img width="24" height="24" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"> Entrar com Google</button>
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Registrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Informação-->
+        <div class="py-5 text-center">
+          <img class="d-block mx-auto mb-4" src="assets/img/loja.png" alt="loja" width="72" height="72">
+          <h2>Formulário de Checkout</h2>
+          <p class="lead">Coloque suas informações de pagamento para que possamos realizar a compra dos produtos, agradecemos por comprar em nossa loja.</p>
+        </div>
+      
+        <!--Checkout-->
+        <div class="row g-5">
+          <div class="col-md-5 col-lg-4 order-md-last">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+              <span class="text-primary">Seu carrinho</span>
+              <span class="badge bg-primary rounded-pill">3</span>
+            </h4>
+            <ul class="list-group mb-3">
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Nome do Produto</h6>
+                  <small class="text-body-secondary">Descrição breve</small>
+                </div>
+                <span class="text-body-secondary">R$12,00</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Segundo Produto</h6>
+                  <small class="text-body-secondary">Descrição breve</small>
+                </div>
+                <span class="text-body-secondary">R$8,00</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Terceiro Item</h6>
+                  <small class="text-body-secondary">Descrição breve</small>
+                </div>
+                <span class="text-body-secondary">R$5,00</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+                <div class="text-success">
+                  <h6 class="my-0">Promo code</h6>
+                  <small>PROMO2023</small>
+                </div>
+                <span class="text-success">−R$5,00</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Total (R$)</span>
+                <strong>R$20,00</strong>
+              </li>
+            </ul>
+          
+            <form class="card p-2">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Código Promocional">
+                <button type="submit" class="btn btn-secondary">Resgatar</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-7 col-lg-8">
+            <h4 class="mb-3">Endereço de Cobrança</h4>
+            <form class="needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">Primeiro Nome</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    Nome válido é obrigatório.
+                  </div>
+                </div>
+              
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">Sobrenome</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    O sobrenome válido é obrigatório.
+                  </div>
+                </div>
+              
+                <div class="col-12">
+                  <label for="username" class="form-label">Nome de Usuário</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" id="username" placeholder="Nome de Usuário" required>
+                  <div class="invalid-feedback">
+                    Seu nome de usuário é obrigatório.
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="col-12">
+                  <label for="email" class="form-label">Email <span class="text-body-secondary">(Opcional)</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="você@exemplo.com">
+                  <div class="invalid-feedback">
+                    Insira um endereço de e-mail válido para atualizações de envio.
+                  </div>
+                </div>
+              
+                <div class="col-12">
+                  <label for="address" class="form-label">Endereço</label>
+                  <input type="text" class="form-control" id="address" placeholder="Rua Principal 1234" required>
+                  <div class="invalid-feedback">
+                    Favor inserir seu endereço de entrega.
+                  </div>
+                </div>
+              
+                <div class="col-12">
+                  <label for="address2" class="form-label">Endereço 2 <span class="text-body-secondary">(Opcional)</span></label>
+                  <input type="text" class="form-control" id="address2" placeholder="Apartamento ou Suíte">
+                </div>
+              
+                <div class="col-md-5">
+                  <label for="country" class="form-label">País</label>
+                  <select class="form-select" id="country" required>
+                    <option value="">Escolha...</option>
+                    <option>Estados Unidos</option>
+                    <option>Brasil</option>
+                    <option>Canada</option>
+                    <option>Japão</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Selecione um país válido.
+                  </div>
+                </div>
+              
+                <div class="col-md-4">
+                  <label for="state" class="form-label">Estado</label>
+                  <input type="text" class="form-control" id="state" placeholder="Minas Gerais" required>
+                  <div class="invalid-feedback">
+                    Forneça um estado válido.
+                  </div>
+                </div>
+              
+                <div class="col-md-3">
+                  <label for="zip" class="form-label">CEP</label>
+                  <input type="text" class="form-control" id="zip" placeholder="CEP" required>
+                  <div class="invalid-feedback">
+                    Forneça um CEP válido.
+                  </div>
+                </div>
+              </div>
+            
+              <hr class="my-4">
+            
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="same-address">
+                <label class="form-check-label" for="same-address">O endereço de entrega é o mesmo do meu endereço de cobrança.</label>
+              </div>
+            
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="save-info">
+                <label class="form-check-label" for="save-info">Salve esta informação para a próxima vez.</label>
+              </div>
+            
+              <hr class="my-4">
+            
+              <h4 class="mb-3">Método de Pagamento</h4>
+            
+              <div class="my-3">
+                <div class="form-check">
+                  <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                  <label class="form-check-label" for="credit">Cartão de Crédito</label>
+                </div>
+                <div class="form-check">
+                  <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="debit">Cartão de Débito</label>
+                </div>
+                <div class="form-check">
+                  <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="paypal">PayPal</label>
+                </div>
+                <div class="form-check">
+                  <input id="pix" name="paymentMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="pix">Pix</label>
+                </div>
+              </div>
+            
+              <div class="row gy-3">
+                <div class="col-md-6">
+                  <label for="cc-name" class="form-label">Nome do Cartão</label>
+                  <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                  <small class="text-body-secondary">Nome completo conforme exibido no cartão.</small>
+                  <div class="invalid-feedback">
+                    O nome no cartão é obrigatório.
+                  </div>
+                </div>
+              
+                <div class="col-md-6">
+                  <label for="cc-number" class="form-label">Número do Cartão de Crédito</label>
+                  <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                  <div class="invalid-feedback">
+                    O número do cartão de crédito é obrigatório
+                  </div>
+                </div>
+              
+                <div class="col-md-3">
+                  <label for="cc-expiration" class="form-label">Expiração</label>
+                  <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                  <div class="invalid-feedback">
+                    A data de expiração é obrigatório
+                  </div>
+                </div>
+              
+                <div class="col-md-3">
+                  <label for="cc-cvv" class="form-label">CVV</label>
+                  <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                  <div class="invalid-feedback">
+                    O código de segurança é obrigatório.
+                  </div>
+                </div>
+              </div>
+            
+              <hr class="my-4">
+            
+              <button class="w-100 btn btn-primary btn-lg" type="submit">Finalizar Compra</button>
+            </form>
+          </div>
+        </div>
+      </main>
+      <!--Footer-->
+      <footer class="container py-5">
+          <div class="row">
+            <div class="col-12 col-md">
+              <a class="nav-link active" aria-current="page" href="#"><img src="assets/img/loja.png" alt="Loja" width="32px" height="32px"></a>
+              <small class="d-block mb-3 text-body-secondary">© 2017–2023 TemplateShop</small>
+            </div>
+            <div class="col-6 col-md">
+              <h5>Créditos</h5>
+              <ul class="list-unstyled text-small">
+                <li><a class="link-secondary text-decoration-none" href="#">Redes Sociais</a></li>
+                <li><a class="link-secondary text-decoration-none" href="#">Créditos de Criação</a></li>
+                <li><a class="link-secondary text-decoration-none" href="#">Créditos a Equipe</a></li>
+                <li><a class="link-secondary text-decoration-none" href="#">Vagas para Desenvolvedores</a></li>
+                <li><a class="link-secondary text-decoration-none" href="#"><li><a class="link-secondary text-decoration-none" href="#"><div> Imagens pegas em <a href="https://unsplash.com/pt-br" title="Unsplash"> Unsplash </a></div></a></li>
+                <li><a class="link-secondary text-decoration-none" href="#"><div> Ícones feitos por <a href="https://www.flaticon.com/br/autores/freepik" title="Freepik"> Freepik em </a><a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div></a></li>
+
+              </ul>
+            </div>
+            <div class="col-6 col-md">
+              <h5>Suporte</h5>
+              <ul class="list-unstyled text-small">
+                <li><a class="link-secondary text-decoration-none" href="#">Número</a></li>
+                <li><a class="link-secondary text-decoration-none" href="#">Feedback</a></li>
+                <li><a class="link-secondary text-decoration-none" href="#">Ajuda</a></li>
+                <li><a class="link-secondary text-decoration-none" href="#">Gmail</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md">
+              <h5>Produtos</h5>
+              <ul class="list-unstyled text-small">
+                <li><a class="link-secondary text-decoration-none" href="#">Business</a></li>
+                <li><a class="link-secondary text-decoration-none" href="#">Education</a></li>
+                <li><a class="link-secondary text-decoration-none" href="#">Government</a></li>
+                <li><a class="link-secondary text-decoration-none" href="#">Gaming</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md">
+              <h5>Sobre</h5>
+              <ul class="list-unstyled text-small">
+                <li><a class="link-secondary text-decoration-none" href="#">Equipe</a></li>
+                <li><a class="link-secondary text-decoration-none" href="#">Localização</a></li>
+                <li><a class="link-secondary text-decoration-none" href="#">Privacidade</a></li>
+                <li><a class="link-secondary text-decoration-none" href="#">Termos de Uso</a></li>
+              </ul>
+            </div>
+          </div>
+      </footer>
+    </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/checkout.js"></script>
+  </body>
+</html>
