@@ -5,6 +5,9 @@ from datetime import datetime
 from django.db import models
 
 
+
+
+
 # Create your models here.
 
 class Site (models.Model):
@@ -28,3 +31,17 @@ def create_server_connection(host_name, user_name, user_password):
     except Error as err:
         print('erro')
     return connection
+
+
+class ItensEstoque:
+    nome : str
+    preco : float
+    quantidade : int
+
+    def ganho_total(self) ->float:
+        return self.preco * self.quantidade
+
+    def __init__(self, name: str, preco: float, quantidade : int):
+        self.nome = nome
+        self.preco = preco
+        self.quantidade = quantidade
