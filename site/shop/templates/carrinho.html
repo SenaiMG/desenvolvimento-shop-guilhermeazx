@@ -1,13 +1,14 @@
+{% load static %}
 <!doctype html>
 <html lang="pt-br" data-bs-theme="auto">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/checkout/">
-    <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-    <link href="assets/css/checkout.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="canonical" href="{% static 'https://getbootstrap.com/docs/5.3/examples/checkout/' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg' %}">
+    <link rel="stylesheet" href="{% static 'https://cdn.jsdelivr.net/npm/@docsearch/css@3' %}">
+    <link href="{% static 'assets/css/checkout.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
     <title>Template-Bootstrap v5.3</title>
   </head>
   <body class="bg-body-tertiary">
@@ -46,7 +47,7 @@
                     <li class="nav-item"><a class="nav-link" href="#suporte">Suporte</a></li>
                     <li class="nav-item"><a class="nav-link" href="../produtos.html">Preços</a></li>
                     <li class="nav-item"><a class="nav-link" href="../carrinho.html">
-                      <img src="assets/img/carrinho.png" alt="carrinho">
+                      <img src="{% static 'assets/img/carrinho.png' %}" alt="carrinho">
                     </a></li>
                 </ul>
               </ul>
@@ -144,7 +145,7 @@
 
         <!--Informação-->
         <div class="py-5 text-center">
-          <img class="d-block mx-auto mb-4" src="assets/img/loja.png" alt="loja" width="72" height="72">
+          <img class="d-block mx-auto mb-4" src="{% static 'assets/img/loja.png' %}" alt="loja" width="72" height="72">
           <h2>Formulário de Checkout</h2>
           <p class="lead">Coloque suas informações de pagamento para que possamos realizar a compra dos produtos, agradecemos por comprar em nossa loja.</p>
         </div>
@@ -407,7 +408,7 @@
           </div>
       </footer>
     </div>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/checkout.js"></script>
+    <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/checkout.js' %}"></script>
   </body>
 </html>
