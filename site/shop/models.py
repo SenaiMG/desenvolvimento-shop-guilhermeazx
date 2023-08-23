@@ -1,6 +1,9 @@
+import mysql.connector
+from mysql.connector import Error
+import pandas as pd
 from datetime import datetime
 from django.db import models
-from django.contrib.auth.models import User
+
 
 # Create your models here.
 
@@ -13,3 +16,15 @@ class Site (models.Model):
     alunos = models.IntegerField()
     date_create = models.DateTimeField(default = datetime.now, blank = True)
 
+def create_server_connection(host_name, user_name, user_password):
+    connection = None
+    try:
+        connection = mysql.connector.connect(
+            host = host_name,
+            user= user_name,
+            passwd = user_password    
+        )
+        print('conectado com sucesso')
+    except Error as err:
+        print('erro')
+    return connection
