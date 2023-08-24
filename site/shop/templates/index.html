@@ -15,14 +15,14 @@
     <header data-bs-theme="dark">
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">TemplateShop</a>
+            <a class="navbar-brand" href="#">Loja de Roupa</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav me-auto mb-2 mb-md-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../index.html"><img src="{% static 'assets/img/loja.png' %}" alt="Loja" width="32px" height="32px"></a>
+                  <a class="nav-link active" aria-current="page" href="../index.html"><img src="{% static 'assets/img/roberto.png' %}" alt="Loja" width="32px" height="32px"></a>
                 </li>
                 <ul class="navbar-nav flex-grow-1 justify-content-between">
                     <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
@@ -176,7 +176,7 @@
             <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
           </div>
           <div class="col-md-5">
-            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="{% static 'assets/img/loja.png' %}">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="{% static 'assets/img/sla.jpg' %}" style="background-color: black;">
           </div>
         </div>
         <hr class="featurette-divider">
@@ -188,53 +188,5 @@
       <!--Feedback/Contatos-->
     </main>
     <!--Footer-->
-    <footer class="container py-5">
-        <div class="row">
-          <div class="col-12 col-md">
-            <a class="nav-link active" aria-current="page" href="#"><img src="{% static 'assets/img/loja.png' %}" alt="Loja" width="32px" height="32px"></a>
-            <small class="d-block mb-3 text-body-secondary">© 2017–2023 TemplateShop</small>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Créditos</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="link-secondary text-decoration-none" href="#">Redes Sociais</a></li>
-              <li><a class="link-secondary text-decoration-none" href="#">Créditos de Criação</a></li>
-              <li><a class="link-secondary text-decoration-none" href="#">Créditos a Equipe</a></li>
-              <li><a class="link-secondary text-decoration-none" href="#">Vagas para Desenvolvedores</a></li>
-              <li><a class="link-secondary text-decoration-none" href="#"><li><a class="link-secondary text-decoration-none" href="#"><div> Imagens pegas em <a href="https://unsplash.com/pt-br" title="Unsplash"> Unsplash </a></div></a></li>
-              <li><a class="link-secondary text-decoration-none" href="#"><div> Ícones feitos por <a href="https://www.flaticon.com/br/autores/freepik" title="Freepik"> Freepik em </a><a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div></a></li>
-              
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Suporte</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="link-secondary text-decoration-none" href="#">Número</a></li>
-              <li><a class="link-secondary text-decoration-none" href="#">Feedback</a></li>
-              <li><a class="link-secondary text-decoration-none" href="#">Ajuda</a></li>
-              <li><a class="link-secondary text-decoration-none" href="#">Gmail</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Produtos</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="link-secondary text-decoration-none" href="#">Business</a></li>
-              <li><a class="link-secondary text-decoration-none" href="#">Education</a></li>
-              <li><a class="link-secondary text-decoration-none" href="#">Government</a></li>
-              <li><a class="link-secondary text-decoration-none" href="#">Gaming</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Sobre</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="link-secondary text-decoration-none" href="#">Equipe</a></li>
-              <li><a class="link-secondary text-decoration-none" href="#">Localização</a></li>
-              <li><a class="link-secondary text-decoration-none" href="#">Privacidade</a></li>
-              <li><a class="link-secondary text-decoration-none" href="#">Depoimentos</a></li>
-              <li><a class="link-secondary text-decoration-none" href="#">Termos de Uso</a></li>
-            </ul>
-          </div>
-        </div>
-    </footer>
-</body>
-</html>
+   {% include 'footer.html' %}
+
